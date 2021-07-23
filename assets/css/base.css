@@ -27,6 +27,7 @@ html {
 
 /* với màn hình > 1200 ==> kích thước tối đa của thằng class là grid chỉ là 1200 */
 /* nhưng với màn hình < 1200 ==> max-width ==> giảm kích thước của thằng class là grid bằng với kích thước màn hình có kích thước < 1200 */
+/* responsive */
 .grid {
   width: 1200px;
   max-width: 100%;

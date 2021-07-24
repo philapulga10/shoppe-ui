@@ -883,6 +883,7 @@
   padding-left: 0;
   list-style-type: none;
   padding: 0 0 8px 0;
+  margin-left: 9px;
 }
 
 .category-item__link {
@@ -901,6 +902,19 @@
   right: -4px;
 }
 
-.category-item--active {
-  
+.category-item--active .category-item__link {
+  color: var(--primary-color);
+}
+
+.category-item--active .category-item__link:before {
+  position: absolute;
+  /* % của element chứa nó */
+  top: 50%;
+  left: 7px;
+  content: '';
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--primary-color);
+  /* % của chính nó */
+  transform: translateY(-50%);
 }

@@ -538,8 +538,6 @@
   cursor: default;
 }
 
-
-
 .header__cart-list::after {
   content: "";
   position: absolute;
@@ -859,6 +857,10 @@
   background-color: #F5F5F5;
 }
 
+.app__content {
+  padding-top: 36px;
+}
+
 .category {
   background-color: var(--white-color);
   border-radius: 2px;
@@ -872,6 +874,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 0;
 }
 
 .category__heading-icon {
@@ -917,4 +920,30 @@
   border-color: transparent transparent transparent var(--primary-color);
   /* % của chính nó */
   transform: translateY(-50%);
+}
+
+/* Home sort + filter */
+.home-filter {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.04);
+  align-items: center;
+  padding: 12px 22px;
+  border-radius: 2px;
+}
+
+.home-filter__page {
+  display: flex;
+  align-items: center;
+}
+
+.home-filter__label {
+  font-size: 1.4rem;
+  color: #555;
+  margin-right: 16px;
+}
+
+.home-filter__btn {
+  margin-right: 12px;
+  min-width: 90px;
+  background-color: var(--white-color);
 }

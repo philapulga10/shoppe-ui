@@ -113,7 +113,7 @@ html {
   outline: none;
   cursor: pointer;
   color: var(--text-color);
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 0 12px;
@@ -145,4 +145,27 @@ html {
   /* cách 2 */
   background-color: #c3c3c3;
   color: #949494;
+}
+
+/* Selection */
+.select-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  min-width: 200px;
+}
+
+.select-input__label {
+  font-size: 1.4rem;
+}
+
+.select-input__icon {
+  font-size: 1.4rem;
+  color: rgb(131, 131, 131);
+  position: relative;
+  top: 1px;
 }

@@ -157,6 +157,11 @@ html {
   border-radius: 2px;
   background-color: var(--white-color);
   min-width: 200px;
+  position: relative;
+}
+
+.select-input:hover .select-input__list {
+  display: block;
 }
 
 .select-input__label {
@@ -168,4 +173,28 @@ html {
   color: rgb(131, 131, 131);
   position: relative;
   top: 1px;
+}
+
+.select-input__list {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  background-color: var(--white-color);
+  border-radius: 2px;
+  padding: 8px 16px;
+  list-style: none;
+  display: none;
+}
+
+.select-input__link {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  padding: 6px 0;
+}
+
+.select-input__link:hover {
+  color: var(--primary-color);
 }

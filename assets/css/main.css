@@ -934,6 +934,7 @@
 .home-filter__page {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .home-filter__label {
@@ -946,4 +947,48 @@
   margin-right: 12px;
   min-width: 90px;
   background-color: var(--white-color);
+}
+
+.home-filter__page-num {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-right: 22px;
+}
+
+.home-filter__page-current {
+  color: var(--primary-color);
+}
+
+.home-filter__page-control {
+  border-radius: 2x;
+  display: flex;
+  overflow: hidden;
+  width: 72px;
+  height: 36px;
+}
+
+.home-filter__page-btn {
+  display: flex;
+  flex: 1;
+  background-color: var(--white-color);
+  text-decoration: none;
+}
+
+.home-filter__page-btn:first-child {
+  border-right: 1px solid #eee;
+}
+
+.home-filter__page-btn--disabled {
+  cursor: default;
+  background-color: #f9f9f9;
+}
+
+.home-filter__page-btn--disabled .home-filter__page-icon {
+  color: #ccc;
+}
+
+.home-filter__page-icon {
+  margin: auto;
+  font-size: 1.4rem;
+  color: #555;
 }

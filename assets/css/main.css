@@ -992,3 +992,39 @@
   font-size: 1.4rem;
   color: #555;
 }
+
+/* Product item */
+.home-product-item {
+  background-color: var(--white-color);
+  margin-top: 10px;
+}
+
+.home-product-item__img {
+  /* chú ý kỹ thuật này */
+  /* 100% => được hiểu là chiều ngang của thẻ chứa nó */
+  padding-top: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-product-item__name {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin: 10px;
+  overflow: hidden;
+  /* ------ cách 1: xử dụng height để tạo dấu ... ------ */
+  height: 3.6rem;
+  display: block;
+  display: -webkit-box; /* chỉ chạy trên những browser có core là webkit, nếu browser không chạy sẽ chạy display block */
+  -webkit-box-orient: vertical; /* quyết định hướng của dòng chữ theo chiều nào */
+  -webkit-line-clamp: 2;
+  /* ------------------------------------------- */
+
+  /* ------ cách 2: xử dụng height để tạo dấu ... ------ */
+  /* ------ cách này chỉ áp dụng trên 1 dòng ... ------ */
+  /* height: 1.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+  /* ------------------------------------------- */
+}
